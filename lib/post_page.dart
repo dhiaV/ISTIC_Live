@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
 class PostPage extends StatefulWidget {
+  const PostPage({super.key});
   @override
   State<PostPage> createState() => _PostPageState();
 }
@@ -11,6 +12,7 @@ class PostPage extends StatefulWidget {
 class _PostPageState extends State<PostPage> {
   //const PostPage({super.key});
 
+  // ignore: unused_field
   XFile? _image;
 
   Future _pickImageFromGallery() async {

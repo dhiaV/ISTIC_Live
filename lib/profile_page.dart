@@ -4,8 +4,8 @@ class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
-    final _height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
 
     return Scaffold(
       appBar: AppBar(
@@ -20,17 +20,17 @@ class ProfilePage extends StatelessWidget {
                 Align(
                   alignment: Alignment.center,
                   child: Padding(
-                    padding: EdgeInsets.only(top: _height / 15),
+                    padding: EdgeInsets.only(top: height / 15),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         CircleAvatar(
                           backgroundImage:
                               const AssetImage('assets/user_avatar.png'),
-                          radius: _height / 10,
+                          radius: height / 10,
                         ),
                         SizedBox(
-                          height: _height / 30,
+                          height: height / 30,
                         ),
                         const Text(
                           'username',
@@ -44,16 +44,16 @@ class ProfilePage extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: _height / 2.2),
+                  padding: EdgeInsets.only(top: height / 2.2),
                   child: Container(
                     color: Colors.white,
                   ),
                 ),
                 Padding(
                   padding: EdgeInsets.only(
-                      top: _height / 2.6,
-                      left: _width / 20,
-                      right: _width / 20),
+                      top: height / 2.6,
+                      left: width / 20,
+                      right: width / 20),
                   child: Column(
                     children: <Widget>[
                       Container(
@@ -81,7 +81,7 @@ class ProfilePage extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(top: _height / 20),
+                        padding: EdgeInsets.only(top: height / 20),
                         child: DefaultTextStyle(
                           style: const TextStyle(color: Colors.black),
                           child: Column(
@@ -92,13 +92,13 @@ class ProfilePage extends StatelessWidget {
                               infoChild(
                                   30, Icons.chat_bubble, 'Show all comments'),
                               Padding(
-                                padding: EdgeInsets.only(top: _height / 30),
+                                padding: EdgeInsets.only(top: height / 30),
                                 child: Container(
                                   width: 100,
                                   height: 30,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.all(
-                                          Radius.circular(_height / 40)),
+                                          Radius.circular(height / 40)),
                                       boxShadow: const [
                                         BoxShadow(
                                             color: Colors.black87,

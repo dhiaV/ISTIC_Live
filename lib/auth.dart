@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+//import 'package:cloud_firestore/cloud_firestore.dart';
 
 final _firebase = FirebaseAuth.instance;
 
@@ -27,11 +27,13 @@ class _AuthScreenState extends State<AuthScreen> {
     _formKey.currentState!.save();
     try {
       if (_isLogin) {
+        // ignore: unused_local_variable
         final userCredentials = await _firebase.signInWithEmailAndPassword(
           email: _enteredEmail,
           password: _enteredPassword,
         );
       } else {
+        // ignore: unused_local_variable
         final userCredentials = await _firebase.createUserWithEmailAndPassword(
           email: _enteredEmail,
           password: _enteredPassword,
@@ -39,7 +41,9 @@ class _AuthScreenState extends State<AuthScreen> {
       }
     } on FirebaseAuthException catch (error) {
       if (error.code == 'email-already-in-use') {}
+      // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).clearSnackBars();
+      // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(error.message ?? 'Authentification failed'),

@@ -86,8 +86,8 @@ class ISTICLiveApp extends StatelessWidget {
         '/feedpage': (context) => const FeedPage(),
         '/messages': (context) => const MessagesPage(),
         '/classes': (context) => const ClassesPage(),
-        '/post': (context) => PostPage(),
-        '/profile': (context) => ProfilePage(),
+        '/post': (context) => const PostPage(),
+        '/profile': (context) => const ProfilePage(),
       },
       home: StreamBuilder(
         stream: FirebaseAuth.instance.authStateChanges(),

@@ -13,7 +13,7 @@ class FeedPage extends StatefulWidget {
 
 class _FeedPageState extends State<FeedPage> {
   final _scrollController = ScrollController();
-  double _iconSize = 30;
+  final double _iconSize = 30;
 
   @override
   Widget build(BuildContext context) {
