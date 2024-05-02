@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "628683676082",
+    "project_id": "istic-live-6f254",
+    "storage_bucket": "istic-live-6f254.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628683676082:android:7eb7c836fa5f19bb7bacab",
+        "android_client_info": {
+          "package_name": "com.example.istic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2Kc9hqmM74TUqAYsMIpHW7bZnot20P-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
